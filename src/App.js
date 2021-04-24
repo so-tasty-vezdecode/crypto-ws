@@ -3,13 +3,13 @@ import { useState, useMemo } from 'react';
 import { Table, Typography } from 'antd';
 import Column from 'antd/lib/table/Column';
 
-import useCurrencies from './hooks/useGetCurrencies';
+import useCurrencies from './hooks/useCurrencies';
 import Ticker from './Ticker';
 
 import './App.css';
 import 'antd/dist/antd.css';
 
-const PAGE_SIZE = 15;
+const PAGE_SIZE = 10;
 
 const App = () => {
     const [page, setPage] = useState(1);
@@ -28,6 +28,8 @@ const App = () => {
 
     return (
         <div className="App">
+            <Typography.Title className="header">Котировки валют</Typography.Title>
+
             <Table
                 dataSource={currencies}
                 className="currencies-table"

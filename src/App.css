@@ -1,14 +1,16 @@
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .App {
   max-width: 700px;
-  width: 700px;
+  margin: 0 auto;
 }
 
 .currencies-table {
   width: 100%;
+}
+
+.header {
+  padding-top: 14px;
 }
