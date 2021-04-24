@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,QACF,CAEA,KACE,eAAgB,CAChB,aACF,CAEA,kBACE,UACF,CAEA,QACE,gBACF","file":"main.bb78395e.chunk.css","sourcesContent":["body {\n  margin: 0;\n}\n\n.App {\n  max-width: 700px;\n  margin: 0 auto;\n}\n\n.currencies-table {\n  width: 100%;\n}\n\n.header {\n  padding-top: 14px;\n}\n"]}
