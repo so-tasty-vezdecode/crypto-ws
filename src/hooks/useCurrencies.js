@@ -6,7 +6,9 @@ const useCurrencies = () => {
     const [currencies, setCurrencies] = useState([]);
 
     useEffect(() => {
-        fetch(endpoints.getCurrencies)
+        fetch(
+            endpoints.getCurrencies,
+        )
             .then(data => data.json())
             .then(data => data.filter(item => item.symbol.match(/\w+?USD/)))
             .then(setCurrencies)
