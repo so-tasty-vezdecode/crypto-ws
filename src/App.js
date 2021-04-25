@@ -35,6 +35,7 @@ const App = () => {
                 className="currencies-table"
                 pagination={paginationConfig}
                 rowKey={item => item.symbol}
+                loading={currencies.length === 0}
             >
                 <Column
                     key="name"
